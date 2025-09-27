@@ -6,3 +6,8 @@ function Greeting() {
   console.log("Hii ! Hello ! How Are You ?");
 }
 console.log("script.js Updated");
+
+const greet=(req,res)=>{
+  console.log("req",req);
+  return res;
+}
