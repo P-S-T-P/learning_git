@@ -15,3 +15,6 @@ const greet = (req, res) => {
 function GreetingX() {
   console.log("Hii ! Hello ! How Are You X?");
 }
+function GreetingY() {
+  console.log("Hii ! Hello ! How Are You X?");
+}
