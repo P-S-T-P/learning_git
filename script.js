@@ -7,10 +7,10 @@ function Greeting() {
 }
 console.log("script.js Updated");
 
-const greet=(req,res)=>{
-  console.log("req",req);
+const greet = (req, res) => {
+  console.log("req", req);
   return res;
-}
+};
 
 function GreetingX() {
   console.log("Hii ! Hello ! How Are You X?");
