@@ -318,8 +318,19 @@
       </li>
     </ul>
     <p>
-      git rm --cached -r [file/] : Remove files from the staging area means to
-      unstage files while keeping them in the working directory.
+      <code>git rm --cached -r [file/] </code> : Remove files from the staging area means to
+      unstage files while keeping them in the working directory.</code>
     </p>
+
+    <h3>Pull Request Protection</h3>
+    <p>
+      Pull request protection is a feature that helps ensure code quality and
+      maintainability by enforcing certain rules before changes can be merged
+      into a protected branch. Here are some common pull request protection
+      rules: 
+    </p>
+    <p>We can add this protection in github by clicking on the "Settings" tab of your repository, then navigating to "Branches" and adding branch protection rules.
+     then we can specify the rules we want to enforce, such as requiring pull request reviews or preventing force pushes. Also, we can enable status checks to ensure that all tests pass before merging.</p>
+     <p>After providing approval to PR(Pull Request), the changes can be merged into the protected branch  by the collaborators.</p>
   </body>
 </html>
