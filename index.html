@@ -282,6 +282,15 @@
       <li>
         Run <code>git cherry-pick [commit hash]</code> to apply the commit.
       </li>
+      <li>
+        Run <code>git cherry-pick --abort</code> to cancel the cherry-pick
+        operation.
+      </li>
+      <li>
+        If there are conflicts, resolve them manually, stage the changes using
+        <code>git add [file]</code>, and then run
+        <code>git cherry-pick --continue</code>.
+      </li>
     </ol>
   </body>
 </html>
