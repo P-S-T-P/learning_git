@@ -10,143 +10,278 @@
   <body>
     <h1>Git Commands</h1>
     <ol type="I">
-      <li>GIT - Global Information Tracker</li>
-      <li>git init - Initialize a new git repository</li>
-      <li>git clone [url] - Clone a repository from a URL</li>
-      <li>git status - Check the status of the repository</li>
-      <li>git add [file] - Stage a file for commit</li>
-      <li>git commit -m "message" - Commit staged changes with a message</li>
-      <li>git push - Push committed changes to a remote repository</li>
-      <li>git pull - Pull changes from a remote repository | git fetch + git merge</li>
-      <li>git branch - List, create, or delete branches</li>
-      <li>git checkout [branch] - Switch to a different branch</li>
-      <li>git merge [branch] - Merge a branch into the current branch</li>
-      <li>git log - View the commit history</li>
+      <li><code>GIT</code> - Global Information Tracker</li>
+      <li><code>git init</code> - Initialize a new git repository</li>
+      <li><code>git clone [url]</code> - Clone a repository from a URL</li>
+      <li><code>git status</code> - Check the status of the repository</li>
+      <li><code>git add [file]</code> - Stage a file for commit</li>
       <li>
-        git diff - Show changes between commits, commit and working tree, etc.
-      </li>
-      <li>git remote - Manage remote repository connections</li>
-      <li>git fetch - Download objects and refs from another repository</li>
-      <li>git reset [file] - Unstage a file</li>
-      <li>
-        git rm [file] - Remove a file from the working directory and stage the
-        removal
-      </li>
-      <li>git stash - Stash changes in a dirty working directory</li>
-      <li>git tag [name] - Create a tag for a specific commit</li>
-      <li>git config - Configure git settings</li>
-      <li>git show [commit] - Show various types of objects</li>
-      <li>
-        git blame [file] - Show what revision and author last modified each line
-        of a file
+        <code>git commit -m "message"</code> - Commit staged changes with a
+        message
       </li>
       <li>
-        git cherry-pick [commit] - Apply the changes introduced by some existing
-        commits
+        <code>git push</code> - Push committed changes to a remote repository
       </li>
-      <li>git rebase [branch] - Reapply commits on top of another base tip</li>
-      <li>git archive - Create an archive of files from a named tree</li>
+      <li>
+        <code>git pull</code> - Pull changes from a remote repository |
+        <code>git fetch</code> + <code>git merge</code>
+      </li>
+      <li><code>git branch</code> - List, create, or delete branches</li>
+      <li><code>git checkout [branch]</code> - Switch to a different branch</li>
+      <li>
+        <code>git merge [branch]</code> - Merge a branch into the current branch
+      </li>
+      <li><code>git log</code> - View the commit history</li>
+      <li>
+        <code>git diff</code> - Show changes between commits, commit and working
+        tree, etc.
+      </li>
+      <li><code>git remote</code> - Manage remote repository connections</li>
+      <li>
+        <code>git fetch</code> - Download objects and refs from another
+        repository
+      </li>
+      <li><code>git reset [file]</code> - Unstage a file</li>
+      <li>
+        <code>git rm [file]</code> - Remove a file from the working directory
+        and stage the removal
+      </li>
+      <li>
+        <code>git stash</code> - Stash changes in a dirty working directory
+      </li>
+      <li><code>git tag [name]</code> - Create a tag for a specific commit</li>
+      <li><code>git config</code> - Configure git settings</li>
+      <li><code>git show [commit]</code> - Show various types of objects</li>
+      <li>
+        <code>git blame [file]</code> - Show what revision and author last
+        modified each line of a file
+      </li>
+      <li>
+        <code>git cherry-pick [commit]</code> - Apply the changes introduced by
+        some existing commits
+      </li>
+      <li>
+        <code>git rebase [branch]</code> - Reapply commits on top of another
+        base tip
+      </li>
+      <li>
+        <code>git archive</code> - Create an archive of files from a named tree
+      </li>
     </ol>
     <strong
       >---------------------------------------------------------------------</strong
     >
     <h2>Git Status Codes</h2>
-    <p>M- Modified | <span style="color: Blue">Color:Blue</span></p>
-    <p>U- Unstaged or Untracked | <span style="color: Red">Color:Red</span></p>
-    <p>R- Revert | <span style="color: Yellow">Color:Yellow</span></p>
-    <p>A- Added | <span style="color: Green">Color:Green</span></p>
-    <p>M- Modified | <span style="color: Blue">Color:Blue</span></p>
-    <p>D- Deleted | <span style="color: Magenta">Color:Magenta</span></p>
-    <p>C- Copied | <span style="color: Cyan">Color:Cyan</span></p>
-    <p>??- Unstaged | <span style="color: Red">Color:Red</span></p>
-    <p>!!- Ignored | <span style="color: Gray">Color:Gray</span></p>
+    <p>
+      <code>M</code> - Modified | <span style="color: Blue">Color:Blue</span>
+    </p>
+    <p>
+      <code>U</code> - Unstaged or Untracked |
+      <span style="color: Red">Color:Red</span>
+    </p>
+    <p>
+      <code>R</code> - Revert | <span style="color: Yellow">Color:Yellow</span>
+    </p>
+    <p>
+      <code>A</code> - Added | <span style="color: Green">Color:Green</span>
+    </p>
+    <p>
+      <code>M</code> - Modified | <span style="color: Blue">Color:Blue</span>
+    </p>
+    <p>
+      <code>D</code> - Deleted |
+      <span style="color: Magenta">Color:Magenta</span>
+    </p>
+    <p><code>C</code> - Copied | <span style="color: Cyan">Color:Cyan</span></p>
+    <p>
+      <code>??</code> - Unstaged | <span style="color: Red">Color:Red</span>
+    </p>
+    <p>
+      <code>!!</code> - Ignored | <span style="color: Gray">Color:Gray</span>
+    </p>
 
     <h2>Git Branching</h2>
-    <p>git fetch <branch> : Fetch changes from a remote branch</p>
     <p>
-      git checkout [branch id] : Switch to a different branch from current
-      branch
+      <code>git fetch &lt;branch&gt;</code> : Fetch changes from a remote branch
     </p>
     <p>
-      git checkout master : Switch to the master branch means you are now
-      working on the main line of development
-    </p>
-    <p>git checkout head : Switch to the latest commit in the current branch or stay in the working directory</p>
-    <p>git checkout head~[N]: Switch to the Nth previous commit in the current branch
-      Ex : head~1 meanqqs one commit before head, head~2 means two commits before head and so on</p>
-    <p>git log --all : View the commit history for all branches</p>
-    <p>
-      git log --all --oneline : View the commit history for all branches in a
-      compact format
+      <code>git checkout [branch id]</code> : Switch to a different branch from
+      current branch
     </p>
     <p>
-      git log --all --oneline --graph : View the commit history for all branches
-      in a compact format with a graph
+      <code>git checkout master</code> : Switch to the master branch means you
+      are now working on the main line of development
     </p>
-    <p>HEAD : Pointer to the current branch reference</p>
     <p>
-      git log --oneline [branch] : View the commit history for a specific branch
-      in a compact format
+      <code>git checkout head</code> : Switch to the latest commit in the
+      current branch or stay in the working directory
     </p>
-    <p>git log : View the commit history</p>
-    <p>git branch : List, create, or delete branches</p>
-    <p>pwd : it will show the current working directory</p>
-    <p>git config --global user.email : psameertanayapatro@gmail.com</p>
-    <p>git config --global user.name : Sameer</p>
-    <p>git config --global --replace-all user.name [username] : it will replace the global username with [username]</p>
-    <p>git config --global --replace-all user.email [email] : it will replace the global email with [email]</p>
     <p>
-      git remote show origin : it will show the details of the remote/online
-      such as GitHub repository
+      <code>git checkout head~[N]</code>: Switch to the Nth previous commit in
+      the current branch Ex : <code>head~1</code> means one commit before head,
+      <code>head~2</code> means two commits before head and so on
     </p>
-    <p>git branch -M [new-name] : Rename the current branch to [new-name]</p>
-    <p>git remote add origin [url] : Link the local repository to remote</p>
-    <p>git push -u origin master : Push the changes to remote repository</p>
-    <p>git pull origin master : Pull the changes from remote repository</p>
+    <p><code>git log --all</code> : View the commit history for all branches</p>
+    <p>
+      <code>git log --all --oneline</code> : View the commit history for all
+      branches in a compact format
+    </p>
+    <p>
+      <code>git log --all --oneline --graph</code> : View the commit history for
+      all branches in a compact format with a graph
+    </p>
+    <p><code>HEAD</code> : Pointer to the current branch reference</p>
+    <p>
+      <code>git log --oneline [branch]</code> : View the commit history for a
+      specific branch in a compact format
+    </p>
+    <p><code>git log</code> : View the commit history</p>
+    <p><code>git branch</code> : List, create, or delete branches</p>
+    <p><code>pwd</code> : it will show the current working directory</p>
+    <p>
+      <code>git config --global user.email</code> : psameertanayapatro@gmail.com
+    </p>
+    <p><code>git config --global user.name</code> : Sameer</p>
+    <p>
+      <code>git config --global --replace-all user.name [username]</code> : it
+      will replace the global username with [username]
+    </p>
+    <p>
+      <code>git config --global --replace-all user.email [email]</code> : it
+      will replace the global email with [email]
+    </p>
+    <p>
+      <code>git remote show origin</code> : it will show the details of the
+      remote/online such as GitHub repository
+    </p>
+    <p>
+      <code>git branch -M [new-name]</code> : Rename the current branch to
+      [new-name]
+    </p>
+    <p>
+      <code>git remote add origin [url]</code> : Link the local repository to
+      remote
+    </p>
+    <p>
+      <code>git push -u origin master</code> : Push the changes to remote
+      repository
+    </p>
+    <p>
+      <code>git pull origin master</code> : Pull the changes from remote
+      repository
+    </p>
 
-    <h3>git add + git commit + git push</h3>
+    <h3>
+      <code>git add</code> + <code>git commit</code> + <code>git push</code>
+    </h3>
 
     <h1>Revert Operation before push</h1>
-    <p>To revert changes before pushing to a remote repository, you can use the following commands:</p>
-    <p>git reset --hard [commit id] : Reset the current branch to the previous commit, discarding all changes</p>
-    <p>git reset --soft [commit id] : Reset the current branch to the previous commit, keeping changes in the working directory</p>
-    <p>git reset --mixed [commit id] : Which is default | Reset the current branch to the previous commit, keeping changes in the staging area to unstage area</p>
-    <p>git revert [commit id] : Create a new commit that undoes the changes made in [commit id]</p>
-    <p>git reflog : Show a log of all actions (including resets , reverts and checkouts) that have affected the HEAD</p>
+    <p>
+      To revert changes before pushing to a remote repository, you can use the
+      following commands:
+    </p>
+    <p>
+      <code>git reset --hard [commit id]</code> : Reset the current branch to
+      the previous commit, discarding all changes
+    </p>
+    <p>
+      <code>git reset --soft [commit id]</code> : Reset the current branch to
+      the previous commit, keeping changes in the working directory
+    </p>
+    <p>
+      <code>git reset --mixed [commit id]</code> : Which is default | Reset the
+      current branch to the previous commit, keeping changes in the staging area
+      to unstage area
+    </p>
+    <p>
+      <code>git revert [commit id]</code> : Create a new commit that undoes the
+      changes made in [commit id]
+    </p>
+    <p>
+      <code>git reflog</code> : Show a log of all actions (including resets ,
+      reverts and checkouts) that have affected the <code>HEAD</code>
+    </p>
 
     <h3>Resolve Conflicts</h3>
-    <p>When you encounter merge conflicts during a git merge or git pull, you need to resolve them manually. Here are the steps to resolve conflicts:</p>
+    <p>
+      When you encounter merge conflicts during a <code>git merge</code> or
+      <code>git pull</code>, you need to resolve them manually. Here are the
+      steps to resolve conflicts:
+    </p>
     <ol>
-      <li>Identify the files with conflicts. Git will mark the conflicted areas in the files.</li>
-      <li>Open the conflicted files and look for the conflict markers (<<<<<<<, =======, >>>>>>>).</li>
-      <li>Manually edit the files to resolve the conflicts by choosing one side or combining changes.</li>
-      <li>After resolving the conflicts, stage the changes using <code>git add [file]</code>.</li>
+      <li>
+        Identify the files with conflicts. Git will mark the conflicted areas in
+        the files.
+      </li>
+      <li>
+        Open the conflicted files and look for the conflict markers
+        (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,
+        <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>).
+      </li>
+      <li>
+        Manually edit the files to resolve the conflicts by choosing one side or
+        combining changes.
+      </li>
+      <li>
+        After resolving the conflicts, stage the changes using
+        <code>git add [file]</code>.
+      </li>
       <li>Finally, commit the changes with <code>git commit</code>.</li>
     </ol>
-    <p>git merge --abort : Abort the merge process and return to the pre-merge state</p>
+    <p>
+      <code>git merge --abort</code> : Abort the merge process and return to the
+      pre-merge state
+    </p>
 
     <h3>Stashing Changes</h3>
-    <p>To temporarily save changes that are not ready to be committed, you can use the git stash command:</p>
+    <p>
+      To temporarily save changes that are not ready to be committed, you can
+      use the <code>git stash</code> command:
+    </p>
     <ol>
-      <li>Run <code>git stash</code> to save your changes and revert to the last commit.</li>
-      <li>Run <code>git stash -m "message"</code> to stash changes with a message.</li>
+      <li>
+        Run <code>git stash</code> to save your changes and revert to the last
+        commit.
+      </li>
+      <li>
+        Run <code>git stash -m "message"</code> to stash changes with a message.
+      </li>
       <li>Run <code>git stash show</code> to view the changes in the stash.</li>
       <li>Run <code>git stash list</code> to view all stashed changes.</li>
-      <li>Run <code>git stash apply [stash id]</code> to reapply stashed changes.</li>
-      <li>Run <code>git stash pop</code> to reapply the most recent stash and remove it from the stash list.</li>
-      <li>Run <code>git stash pop [stash id]</code> to reapply a specific stash and remove it from the stash list.</li>
-      <li>Run <code>git stash drop [stash id]</code> to delete a specific stash.</li>
+      <li>
+        Run <code>git stash apply [stash id]</code> to reapply stashed changes.
+      </li>
+      <li>
+        Run <code>git stash pop</code> to reapply the most recent stash and
+        remove it from the stash list.
+      </li>
+      <li>
+        Run <code>git stash pop [stash id]</code> to reapply a specific stash
+        and remove it from the stash list.
+      </li>
+      <li>
+        Run <code>git stash drop [stash id]</code> to delete a specific stash.
+      </li>
       <li>Run <code>git stash clear</code> to delete all stashes.</li>
     </ol>
     <strong
       >---------------------------------------------------------------------</strong
     >
     <h3>Cherry Picking</h3>
-    <p>Cherry picking is the process of selecting specific commits from one branch and applying them to another branch. Here are the steps to cherry-pick a commit:</p>
+    <p>
+      Cherry picking is the process of selecting specific commits from one
+      branch and applying them to another branch. Here are the steps to
+      cherry-pick a commit:
+    </p>
     <ol>
-      <li>Identify the commit hash you want to cherry-pick using <code>git log</code>.</li>
+      <li>
+        Identify the commit hash you want to cherry-pick using
+        <code>git log</code>.
+      </li>
       <li>Switch to the target branch where you want to apply the commit.</li>
-      <li>Run <code>git cherry-pick [commit hash]</code> to apply the commit.</li>
+      <li>
+        Run <code>git cherry-pick [commit hash]</code> to apply the commit.
+      </li>
     </ol>
   </body>
 </html>
