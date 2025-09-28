@@ -134,9 +134,19 @@
       <li>Run <code>git stash list</code> to view all stashed changes.</li>
       <li>Run <code>git stash apply [stash id]</code> to reapply stashed changes.</li>
       <li>Run <code>git stash pop</code> to reapply the most recent stash and remove it from the stash list.</li>
+      <li>Run <code>git stash pop [stash id]</code> to reapply a specific stash and remove it from the stash list.</li>
       <li>Run <code>git stash drop [stash id]</code> to delete a specific stash.</li>
       <li>Run <code>git stash clear</code> to delete all stashes.</li>
     </ol>
-    
+    <strong
+      >---------------------------------------------------------------------</strong
+    >
+    <h3>Cherry Picking</h3>
+    <p>Cherry picking is the process of selecting specific commits from one branch and applying them to another branch. Here are the steps to cherry-pick a commit:</p>
+    <ol>
+      <li>Identify the commit hash you want to cherry-pick using <code>git log</code>.</li>
+      <li>Switch to the target branch where you want to apply the commit.</li>
+      <li>Run <code>git cherry-pick [commit hash]</code> to apply the commit.</li>
+    </ol>
   </body>
 </html>

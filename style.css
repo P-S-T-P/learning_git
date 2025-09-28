@@ -1,11 +1,93 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    }
-    
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 20px;
-    }
+  /* General Layout */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f8f9fc;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        color: #2d2d2d;
+      }
+
+      h1, h2, h3 {
+        color: #1a237e;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 6px;
+        margin-top: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+        color: #0d47a1;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        margin-top: 30px;
+        color: #1565c0;
+      }
+
+      /* Ordered & Unordered Lists */
+      ol, ul {
+        padding-left: 25px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      /* Code Styling */
+      code {
+        background: #eceff1;
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+        color: #d81b60;
+      }
+
+      /* Info Boxes */
+      .box {
+        background: #ffffff;
+        border-left: 6px solid #1e88e5;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      }
+
+      .highlight {
+        background: #e3f2fd;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+
+      /* Status Colors */
+      .status { font-weight: bold; }
+      .blue { color: blue; }
+      .red { color: red; }
+      .yellow { color: goldenrod; }
+      .green { color: green; }
+      .magenta { color: magenta; }
+      .cyan { color: teal; }
+      .gray { color: gray; }
+
+      /* Divider */
+      .divider {
+        margin: 40px 0;
+        border-top: 2px dashed #b0bec5;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #555;
+      }
