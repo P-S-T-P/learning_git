@@ -22,3 +22,7 @@ function GreetingY() {
 function GreetingZ() {
   console.log("Hii ! Hello ! How Are You Z?");
 }
+
+function GreetingSameer() {
+  console.log("Hii ! Hello ! How Are You Sameer ?");
+}
