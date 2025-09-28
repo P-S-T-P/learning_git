@@ -43,7 +43,4 @@ const people = {
       }. My skills include ${this.skills.join(", ")}.`
     );
   },
-  mindset: function () {
-    console.log("Stay positive and keep learning!");
-  },
 };
