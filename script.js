@@ -18,3 +18,7 @@ function GreetingX() {
 function GreetingY() {
   console.log("Hii ! Hello ! How Are You X?");
 }
+
+function GreetingZ() {
+  console.log("Hii ! Hello ! How Are You Z?");
+}

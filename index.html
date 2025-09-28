@@ -113,5 +113,30 @@
     <p>git reset --mixed [commit id] : Which is default | Reset the current branch to the previous commit, keeping changes in the staging area to unstage area</p>
     <p>git revert [commit id] : Create a new commit that undoes the changes made in [commit id]</p>
     <p>git reflog : Show a log of all actions (including resets , reverts and checkouts) that have affected the HEAD</p>
+
+    <h3>Resolve Conflicts</h3>
+    <p>When you encounter merge conflicts during a git merge or git pull, you need to resolve them manually. Here are the steps to resolve conflicts:</p>
+    <ol>
+      <li>Identify the files with conflicts. Git will mark the conflicted areas in the files.</li>
+      <li>Open the conflicted files and look for the conflict markers (<<<<<<<, =======, >>>>>>>).</li>
+      <li>Manually edit the files to resolve the conflicts by choosing one side or combining changes.</li>
+      <li>After resolving the conflicts, stage the changes using <code>git add [file]</code>.</li>
+      <li>Finally, commit the changes with <code>git commit</code>.</li>
+    </ol>
+    <p>git merge --abort : Abort the merge process and return to the pre-merge state</p>
+
+    <h3>Stashing Changes</h3>
+    <p>To temporarily save changes that are not ready to be committed, you can use the git stash command:</p>
+    <ol>
+      <li>Run <code>git stash</code> to save your changes and revert to the last commit.</li>
+      <li>Run <code>git stash -m "message"</code> to stash changes with a message.</li>
+      <li>Run <code>git stash show</code> to view the changes in the stash.</li>
+      <li>Run <code>git stash list</code> to view all stashed changes.</li>
+      <li>Run <code>git stash apply [stash id]</code> to reapply stashed changes.</li>
+      <li>Run <code>git stash pop</code> to reapply the most recent stash and remove it from the stash list.</li>
+      <li>Run <code>git stash drop [stash id]</code> to delete a specific stash.</li>
+      <li>Run <code>git stash clear</code> to delete all stashes.</li>
+    </ol>
+    
   </body>
 </html>
