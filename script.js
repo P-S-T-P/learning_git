@@ -26,3 +26,24 @@ function GreetingZ() {
 function GreetingSameer() {
   console.log("Hii ! Hello ! How Are You Sameer ?");
 }
+
+const people = {
+  name: "Sameer",
+  age: 24,
+  location: "India",
+  profession: "Developer",
+  skills: ["JavaScript", "React", "NodeJS"],
+  greet: function () {
+    console.log("Hello, I am " + this.name);
+  },
+  info: function () {
+    console.log(
+      `I am ${this.name}, a ${this.age} year old ${this.profession} from ${
+        this.location
+      }. My skills include ${this.skills.join(", ")}.`
+    );
+  },
+  mindset: function () {
+    console.log("Stay positive and keep learning!");
+  },
+};
