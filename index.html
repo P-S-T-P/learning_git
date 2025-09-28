@@ -173,6 +173,9 @@
 
     <h3>
       <code>git add</code> + <code>git commit</code> + <code>git push</code>
+      <br />
+      <code>git commit -m "message" && git push</code> : Stage, commit and push
+      changes to remote repository in a single command
     </h3>
 
     <h1>Revert Operation before push</h1>
@@ -303,10 +306,20 @@
       <li>Ignore temporary files created by your text editor or IDE.</li>
       <li>Ignore build artifacts and compiled files.</li>
       <li>Ignore log files and debug output.</li>
-      <li>Ignore operating system-specific files (e.g., .DS_Store on macOS).</li>
-      <li>Ignore dependency directories (e.g., node_modules for Node.js projects).</li>
-      <li>Ignore configuration files (e.g., .env) that contain sensitive information.</li>
+      <li>
+        Ignore operating system-specific files (e.g., .DS_Store on macOS).
+      </li>
+      <li>
+        Ignore dependency directories (e.g., node_modules for Node.js projects).
+      </li>
+      <li>
+        Ignore configuration files (e.g., .env) that contain sensitive
+        information.
+      </li>
     </ul>
-    
+    <p>
+      git rm --cached -r [file/] : Remove files from the staging area means to
+      unstage files while keeping them in the working directory.
+    </p>
   </body>
 </html>
