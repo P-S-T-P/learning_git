@@ -27,7 +27,12 @@
         <code>git fetch</code> + <code>git merge</code>
       </li>
       <li><code>git branch</code> - List, create, or delete branches</li>
+      <li><code>git branch [branch]</code> - Create a new branch</li>
       <li><code>git checkout [branch]</code> - Switch to a different branch</li>
+      <li><code>git switch [branch]</code> - Switch to a different branch (alternative to checkout)</li>
+      <li><code>git switch -C [branch]</code> - Create a new branch and switch to it</li>
+      <li><code>git branch -d [branch]</code> - Delete a branch</li>
+      <li><code>git branch -m [old-branch] [new-branch]</code> - Rename a branch</li>
       <li>
         <code>git merge [branch]</code> - Merge a branch into the current branch
       </li>
@@ -68,6 +73,8 @@
         <code>git archive</code> - Create an archive of files from a named tree
       </li>
     </ol>
+    <h3><code>git clone [repository URL]</code>: This will create a copy of the repository in your local machine in the specified location.
+    For this we need to run this command in the CMD. By doing this it is connected with the remote reprositry also so we can perform push,pull ... opN </h3>
     <strong
       >---------------------------------------------------------------------</strong
     >
@@ -150,6 +157,7 @@
       <code>git config --global --replace-all user.email [email]</code> : it
       will replace the global email with [email]
     </p>
+    <p><code>git config --global -e </code>: It will open the .gitconfig file. </p>
     <p>
       <code>git remote show origin</code> : it will show the details of the
       remote/online such as GitHub repository
@@ -204,7 +212,8 @@
       <code>git reflog</code> : Show a log of all actions (including resets ,
       reverts and checkouts) that have affected the <code>HEAD</code>
     </p>
-
+    <p><code>git restore --staged .</code> : Unstage all changes in the staging area.</p>
+    <p><code>git commit -am "message"</code> : Stage and commit all changes with a message.</p>
     <h3>Resolve Conflicts</h3>
     <p>
       When you encounter merge conflicts during a <code>git merge</code> or
@@ -332,5 +341,10 @@
     <p>We can add this protection in github by clicking on the "Settings" tab of your repository, then navigating to "Branches" and adding branch protection rules.
      then we can specify the rules we want to enforce, such as requiring pull request reviews or preventing force pushes. Also, we can enable status checks to ensure that all tests pass before merging.</p>
      <p>After providing approval to PR(Pull Request), the changes can be merged into the protected branch  by the collaborators.</p>
+
+     <h3>Open Source Contribution</h3>
+      <p>Open source contribution is the process of contributing to open source projects by adding new features, fixing bugs, improving documentation, or providing support to other users. Here are some steps to contribute to an open source project:</p>
+      <p><code>git remote</code> : This command is used to manage the set of repositories ("remotes") whose branches you track. You can use it to add, remove, and view remote repositories.</p>
+      <p><code>git remote -v</code> : This command is used to view the list of remote repositories and their URLs.</p>
   </body>
 </html>
